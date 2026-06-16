@@ -76,3 +76,11 @@ body{
 #Brand{
     font-size: 100px;
 }
+
+.dark-theme .theme-icon {
+  filter: invert(1);
+}
+
+.dark-theme .theme-icon-cap {
+  filter: invert(1);
+}

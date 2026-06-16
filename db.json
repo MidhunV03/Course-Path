@@ -8,6 +8,15 @@
       "role": "Mentor",
       "department": "IT",
       "id": "EbcVT750BvM"
+    },
+    {
+      "name": "Mentor",
+      "email": "mentor1@gmail.com",
+      "password": "Mentor@1",
+      "gender": "Male",
+      "role": "Mentor",
+      "department": "FINANCE",
+      "id": "EbcVT750BvM"
     }
   ],
   "Students": [
@@ -24,26 +33,31 @@
   ],
   "Courses": [
     {
-      "title": "HTML AND CSS",
-      "duration": "3",
-      "department": "IT",
-      "description": "NEW HTML AND CSS CO",
-      "id": "5PJ61VjlT4A"
-    },
-    {
-      "title": "JAVASCRIPT",
-      "duration": "3",
-      "department": "IT",
-      "description": "JAVASCRIPT IS BACKBONE OF WEBSITES",
-      "id": "9No9hGzDNNI"
-    },
-    {
-      "title": "JQUERY",
+      "title": "BOOTSTRAP CSS",
       "duration": "1",
-      "department": "IT",
-      "description": "JQUERY IS A JS LIBRARY WITH PRE-DEFINED FUNCTIONS",
-      "createdby": "chinese1@gmail.com",
-      "id": "6EGo1Tn-YdA"
+      "department": "FINANCE",
+      "description": "Css Framework",
+      "createdby": "mentor1@gmail.com",
+      "isDeleted": false,
+      "id": "lg23FoVQCO8"
+    },
+    {
+      "title": "JIRA",
+      "duration": "2",
+      "department": "FINANCE",
+      "description": "Jira is a Software",
+      "createdby": "mentor1@gmail.com",
+      "isDeleted": false,
+      "id": "LGAYH1N-oKs"
+    },
+    {
+      "title": "BOOTSTRAP CSS",
+      "duration": "1",
+      "department": "FINANCE",
+      "description": "jhewnfl.",
+      "createdby": "mentor1@gmail.com",
+      "isDeleted": false,
+      "id": "zM7-isDipNs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
