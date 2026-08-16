@@ -1,3 +1,6 @@
+import { MentorAPI,StudentsAPI,CoursesAPI,CoursesEndrolled } from "./services/api.js";
+
+
 $("#theme_btn").on('click',function()
 {
     $('body').toggleClass('dark-theme');
@@ -10,13 +13,6 @@ $("#theme_btn").on('click',function()
         $("#theme_btn").text('🌙')
     }
 })
-
-
-const MentorAPI = "http://localhost:3000/Mentor";
-const StudentsAPI = "http://localhost:3000/Students";
-const CoursesAPI = "http://localhost:3000/Courses";
-const CoursesEndrolled = "http://localhost:3000/CoursesEndrolled";
-
 const currentUser = localStorage.getItem("MentorEmail"); 
 let currentTab = "Dashboard";
 
@@ -357,7 +353,7 @@ async function fetchMentor() {
         <div class="col-6 d-flex flex-column justify-content-start gap-2 ">
             <h2>${data[0].name}</h2>
             <h5>${data[0].department}</h5>
-            <button class=" btn btn-custom w-50" onclick = "UserDetailPage()">View Details</button>
+            <button class=" btn btn-custom w-50 UserDetailbtn">View Details</button>
         </div>
 
         `;
@@ -374,7 +370,7 @@ async function fetchMentor() {
         <div class="col-6 d-flex flex-column justify-content-start gap-2 ">
             <h2>${data[0].name}</h2>
             <h5>${data[0].department}</h5>
-            <button class=" btn btn-custom w-50">View Details</button>
+            <button class=" btn btn-custom w-50 UserDetailbtn">View Details</button>
         </div>
 
         `;
@@ -773,17 +769,15 @@ async function studentReport(id) {
 
 }
 
-// document.addEventListener('click',async function UserDetailPage(e){
-//     if(e.target.classList.contains('UserDetailbtn')) {
+document.addEventListener('click',function(e){
+    const button = e.target.closest(".UserDetailbtn");
+    console.log(button);
+    // if(!button) return;
+    UserDetailPage();
+})
 
-//     }
-// })
 
-const buttons = document.querySelectorAll('.UserDetailbtn');
 
-buttons.forEach(button => {
-    button.addEventListener('click', UserDetailPage);
-});
 async function UserDetailPage() {
         try{
             setTimeout(()=>{

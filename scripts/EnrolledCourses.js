@@ -1,3 +1,6 @@
+import { MentorAPI,StudentsAPI,CoursesAPI,CoursesEndrolled } from "./services/api.js";
+
+
 $("#theme_btn").on('click',function()
 {
     $('body').toggleClass('dark-theme');
@@ -10,11 +13,6 @@ $("#theme_btn").on('click',function()
         $("#theme_btn").text('🌙')
     }
 })
-
-const MentorAPI = "http://localhost:3000/Mentor";
-const StudentsAPI = "http://localhost:3000/Students";
-const CoursesAPI = "http://localhost:3000/Courses";
-const CoursesEndrolled = "http://localhost:3000/CoursesEndrolled";
 
 const currentUser = localStorage.getItem("StudentEmail"); 
 let currentTab = "Dashboard";

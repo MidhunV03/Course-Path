@@ -1,5 +1,5 @@
-const MentorAPI = "http://localhost:3000/Mentor"
-const StudentsAPI = "http://localhost:3000/Students"
+import { MentorAPI,StudentsAPI } from "./services/api.js";
+
 
 $("#theme_btn").on('click',function()
 {
@@ -40,13 +40,13 @@ loginpassword.on('input',function()
 {
     if(!password_pattern.test(loginpassword.val().trim()))
     {
-        $("#loginemailerror").text("Invalid Email");
+        $("#loginpassworderror").text("Invalid Password");
         $(this).addClass("is-invalid");
         $(this).removeClass("is-valid");
     }
     else
     {
-        $("#loginemailerror").text("")
+        $("#loginpassworderror").text("")
         $(this).addClass("is-valid")
         $(this).removeClass("is-invalid")
         localStorage.setItem("rollnum",signinrollnum.val())
@@ -124,9 +124,9 @@ async function loginvalidate(e) {
 
                 setTimeout(() => {
                     if (role === "Mentor") {
-                        window.location.assign("MentorDashboard.html");
+                        window.location.assign("pages/MentorDashboard.html");
                     } else {
-                        window.location.assign("StudentDashboard.html");
+                        window.location.assign("pages/StudentDashboard.html");
                     }
                     removeSpinner()
                 }, 3000);

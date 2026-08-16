@@ -1,3 +1,5 @@
+import { MentorAPI,StudentsAPI,CoursesAPI,CoursesEndrolled } from "./services/api.js";
+
 $("#theme_btn").on('click',function()
 {
     $('body').toggleClass('dark-theme');
@@ -11,10 +13,6 @@ $("#theme_btn").on('click',function()
     }
 })
 
-const MentorAPI = "http://localhost:3000/Mentor";
-const StudentsAPI = "http://localhost:3000/Students";
-const CoursesAPI = "http://localhost:3000/Courses";
-const CoursesEndrolled = "http://localhost:3000/CoursesEndrolled";
 
 const currentUserRole = localStorage.getItem("Role");
 let currentUserEmail;
@@ -105,7 +103,7 @@ async function fetchDetails() {
 
                     <div class="mt-3">
 
-                        <button class="btn btn-danger px-4" onclick="Logoutfn()">
+                        <button class="btn btn-danger logOutbt px-4">
                             Logout
                         </button>
 
@@ -195,7 +193,7 @@ contentContainer.appendChild(div);
 
                     <div class="mt-3">
 
-                        <button class="btn btn-danger px-4" onclick="Logoutfn()">
+                        <button class="btn btn-danger logOutbt px-4">
                             Logout Profile
                         </button>
 
@@ -218,6 +216,12 @@ contentContainer.appendChild(div);
 
 fetchDetails();
 
+document.addEventListener('click',function(e){
+    const logOutBtn = e.target.closest(".logOutbt");
+    if(!logOutBtn) return;
+    Logoutfn();    
+})
+
 async function Logoutfn()
 {
 
@@ -238,7 +242,7 @@ try
     }
 
     localStorage.clear();
-    window.location.assign("Home.html");
+    window.location.assign("/index.html");
 
 }
 catch(error)
