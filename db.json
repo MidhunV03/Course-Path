@@ -146,7 +146,7 @@
       "courseDescription": "Jira is a Software",
       "providedBy": "mentor1@gmail.com",
       "startDate": "17/6/2026",
-      "status": "not yet started",
+      "status": "In Progress",
       "id": "Z9kWyC-4zJU"
     },
     {
@@ -176,6 +176,20 @@
       "startDate": "16/8/2026",
       "status": "not yet started",
       "id": "f6catBbBs5U"
+    },
+    {
+      "studentRollnum": "24BCS040",
+      "studentName": "Sweatha",
+      "studentEmail": "sweatha@gmail.com",
+      "studentDepartment": "Finance",
+      "courseId": "lg23FoVQCO8",
+      "courseTitle": "BOOTSTRAP CSS",
+      "courseDuration": "1",
+      "courseDescription": "Css Framework",
+      "providedBy": "mentor1@gmail.com",
+      "startDate": "17/8/2026",
+      "status": "not yet started",
+      "id": "xLkTjiSXXX8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

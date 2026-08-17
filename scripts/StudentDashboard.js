@@ -66,7 +66,7 @@ async function renderCourse(data) {
                 </div>
                 </div>
                 <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
-                    <button id="dashboardEnrollbtn" class="btn btn-custom" onclick = "enrollCourse('${element.id}')">
+                    <button class="btn btn-custom enrollBtn" data-id='${element.id}'>
                         ENROLL
                     </button>
                 </div>
@@ -155,7 +155,13 @@ async function fetchMentor() {
         toastr.error(error)
     }
 }
-
+document.addEventListener('click',function(e){
+    const enrollBtn = e.target.closest(".enrollBtn");
+    if(!enrollBtn) return;
+    const id = enrollBtn.dataset.id;
+    if(!id) return;
+    enrollCourse(id);
+})
 async function enrollCourse(id) 
 {
     const currentcourseID = id;
@@ -317,7 +323,7 @@ async function fetchCourseList() {
             </div>
             <div class="card-footer bg-transparent border-0 d-flex justify-content-end gap-2">
                 <button
-                    class="btn btn-custom rounded-pill px-3" onclick = "enrollCourse('${element.id}')">
+                    class="btn btn-custom rounded-pill px-3 enrollBtn" data-id='${element.id}'>
                     ENROLL
                 </button>
             </div>

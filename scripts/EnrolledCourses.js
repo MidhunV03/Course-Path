@@ -94,7 +94,7 @@ async function renderCourses(data) {
             <div class="card-footer card-custom border-0 d-flex justify-content-end">
                     <select
                         id="status${element.id}"
-                        class="form-select status-select me-2" onChange = "changeStatus('${element.id}',this.value)">
+                        class="form-select status-select me-2" data-id="${element.id}">
 
                         <option value ="Not yet Started">Not yet Started</option>
                         <option value="In Progress">In Progress</option>
@@ -103,8 +103,9 @@ async function renderCourses(data) {
                     </select>
 
                     <button
-                        class="btn btn-success"
-                        onclick="showDropdown('${element.id}')">
+                        class="btn btn-success showDropdownbtn"
+                        data-id='${element.id}'
+                        >
 
                         Update Status
 
@@ -120,7 +121,13 @@ async function renderCourses(data) {
         toastr.error(error)
     }
 }
-
+document.addEventListener('click',function(e){
+    const btn = e.target.closest(".showDropdownbtn");
+    if(!btn) return;
+    const id = btn.dataset.id;
+    if(!id) return;
+    showDropdown(id);
+})
 function showDropdown(id){
 
     document
@@ -128,6 +135,13 @@ function showDropdown(id){
         .classList.add("show");
 
 }
+document.addEventListener('change', function(e) {
+    const selectEl = e.target.closest('.status-select');
+    if (!selectEl) return;
+    const id = selectEl.dataset.id;
+    const value = selectEl.value;
+    changeStatus(id, value);
+});
 
 async function changeStatus(id,value) {
 
@@ -317,6 +331,20 @@ document.getElementById("UserDetailbtn").addEventListener('click',async function
              window.location.replace('Details.html');
         },3060)
         toastr.success("Redirecting to User Details Page...")
+    }
+    catch(error)
+    {
+        toastr.error(error)
+    }
+
+})
+document.getElementById("HomePagebtn").addEventListener('click',async function(){
+
+    try{
+        setTimeout(()=>{
+             window.location.replace('StudentDashboard.html');
+        },3060)
+        toastr.success("Redirecting to Student DashBoard...")
     }
     catch(error)
     {
