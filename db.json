@@ -1,15 +1,6 @@
 {
   "Mentor": [
     {
-      "name": "Chinese",
-      "email": "chinese1@gmail.com",
-      "password": "Chinese@123",
-      "gender": "Female",
-      "role": "Mentor",
-      "department": "IT",
-      "id": "EbcVT750BvM"
-    },
-    {
       "name": "Mentor",
       "email": "mentor1@gmail.com",
       "password": "Mentor@1",
@@ -21,176 +12,19 @@
   ],
   "Students": [
     {
-      "rollnum": "23BCS031",
-      "name": "Midhun",
-      "email": "midhun1@gmail.com",
-      "password": "Midhun@123",
+      "rollnum": "23HSC01",
+      "name": "Test",
+      "email": "test1@gmail.com",
+      "password": "Test@123",
       "gender": "Male",
       "role": "Student",
       "department": "IT",
       "id": "8qRIQYGaUUM"
-    },
-    {
-      "rollnum": "24BCS040",
-      "name": "Sweatha",
-      "email": "sweatha@gmail.com",
-      "password": "Sweatha@123",
-      "gender": "Female",
-      "department": "Finance",
-      "role": "Student",
-      "id": "68gYDvTzQX0"
     }
   ],
   "Courses": [
-    {
-      "title": "BOOTSTRAP CSS",
-      "duration": "1",
-      "department": "IT",
-      "description": "Css Framework",
-      "createdby": "mentor1@gmail.com",
-      "isDeleted": false,
-      "id": "lg23FoVQCO8"
-    },
-    {
-      "title": "JIRA",
-      "duration": "2",
-      "department": "IT",
-      "description": "Jira is a Software",
-      "createdby": "mentor1@gmail.com",
-      "isDeleted": false,
-      "id": "LGAYH1N-oKs"
-    },
-    {
-      "title": "BOOTSTRAP CSS",
-      "duration": "1",
-      "department": "Finance",
-      "description": "jhewnfl.",
-      "createdby": "mentor1@gmail.com",
-      "isDeleted": false,
-      "id": "zM7-isDipNs"
-    },
-    {
-      "title": "BOOTSTRAP CSS",
-      "duration": "1",
-      "department": "FINANCE",
-      "description": "hfghgfh",
-      "createdby": "mentor1@gmail.com",
-      "isDeleted": false,
-      "id": "3fNGpQ1Y5rQ"
-    },
-    {
-      "title": "JIRA",
-      "duration": "2",
-      "department": "FINANCE",
-      "description": "Jira is a Software",
-      "createdby": "mentor1@gmail.com",
-      "isDeleted": true,
-      "id": "-Uuo44cczy8"
-    },
-    {
-      "title": "dasasddsa",
-      "duration": "1",
-      "department": "FINANCE",
-      "description": "SACdcasc",
-      "createdby": "mentor1@gmail.com",
-      "isDeleted": false,
-      "id": "VV5C1PP-cps"
-    },
-    {
-      "title": "JIRA",
-      "duration": "2",
-      "department": "Finance",
-      "description": "Jira is a Software",
-      "createdby": "mentor1@gmail.com",
-      "isDeleted": false,
-      "id": "gORKcv41QrA"
-    }
   ],
   "CoursesEndrolled": [
-    {
-      "studentRollnum": "23BCS031",
-      "studentName": "Midhun",
-      "studentEmail": "midhun1@gmail.com",
-      "studentDepartment": "IT",
-      "courseId": "zM7-isDipNs",
-      "courseTitle": "BOOTSTRAP CSS",
-      "courseDuration": "1",
-      "courseDescription": "jhewnfl.",
-      "providedBy": "mentor1@gmail.com",
-      "startDate": "17/6/2026",
-      "status": "Completed",
-      "id": "kn3KsHrlDwk"
-    },
-    {
-      "studentRollnum": "23BCS031",
-      "studentName": "Midhun",
-      "studentEmail": "midhun1@gmail.com",
-      "studentDepartment": "IT",
-      "courseId": "LGAYH1N-oKs",
-      "courseTitle": "JIRA",
-      "courseDuration": "2",
-      "courseDescription": "Jira is a Software",
-      "providedBy": "mentor1@gmail.com",
-      "startDate": "17/6/2026",
-      "status": "Completed",
-      "id": "yvifGevMTeQ"
-    },
-    {
-      "studentRollnum": "24BCS040",
-      "studentName": "Sweatha",
-      "studentEmail": "sweatha@gmail.com",
-      "studentDepartment": "Finance",
-      "courseId": "LGAYH1N-oKs",
-      "courseTitle": "JIRA",
-      "courseDuration": "2",
-      "courseDescription": "Jira is a Software",
-      "providedBy": "mentor1@gmail.com",
-      "startDate": "17/6/2026",
-      "status": "In Progress",
-      "id": "Z9kWyC-4zJU"
-    },
-    {
-      "studentRollnum": "23BCS031",
-      "studentName": "Midhun",
-      "studentEmail": "midhun1@gmail.com",
-      "studentDepartment": "IT",
-      "courseId": "lg23FoVQCO8",
-      "courseTitle": "BOOTSTRAP CSS",
-      "courseDuration": "1",
-      "courseDescription": "Css Framework",
-      "providedBy": "mentor1@gmail.com",
-      "startDate": "18/6/2026",
-      "status": "not yet started",
-      "id": "bRSQCcMwL2Q"
-    },
-    {
-      "studentRollnum": "24BCS040",
-      "studentName": "Sweatha",
-      "studentEmail": "sweatha@gmail.com",
-      "studentDepartment": "Finance",
-      "courseId": "VV5C1PP-cps",
-      "courseTitle": "dasasddsa",
-      "courseDuration": "1",
-      "courseDescription": "SACdcasc",
-      "providedBy": "mentor1@gmail.com",
-      "startDate": "16/8/2026",
-      "status": "not yet started",
-      "id": "f6catBbBs5U"
-    },
-    {
-      "studentRollnum": "24BCS040",
-      "studentName": "Sweatha",
-      "studentEmail": "sweatha@gmail.com",
-      "studentDepartment": "Finance",
-      "courseId": "lg23FoVQCO8",
-      "courseTitle": "BOOTSTRAP CSS",
-      "courseDuration": "1",
-      "courseDescription": "Css Framework",
-      "providedBy": "mentor1@gmail.com",
-      "startDate": "17/8/2026",
-      "status": "not yet started",
-      "id": "xLkTjiSXXX8"
-    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }

@@ -1,5 +1,4 @@
-# Dependencies
 node_modules/
-
-# IDE
-.vscode/
+.env
+.env.*
+!.env.example

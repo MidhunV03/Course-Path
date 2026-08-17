@@ -115,31 +115,40 @@ Students can browse available courses, enroll in courses, update course status, 
 
 ```text
 CoursePlan/
-│
-├── assets/
-│   ├── images
-│   └── svg files
-│
-├── pages/
-│   ├── Home.html
-│   ├── MentorDashboard.html
-│   ├── StudentDashboard.html
+├── assets
+│   ├── ScreenShots
+│   │   ├── Homepage.png
+│   │   ├── MentorDashboard.png
+│   │   └── StudentDashboard.png
+│   ├── Login.svg
+│   ├── businessman.png
+│   ├── education.svg
+│   ├── learning.png
+│   ├── male.png
+│   └── woman.png
+├── pages
+│   ├── Details.html
 │   ├── EnrolledCourses.html
-│   └── UserDetails.html
-│
-├── scripts/
+│   ├── MentorDashboard.html
+│   └── StudentDashboard.html
+├── scripts
+│   ├── services
+│   │   └── api.js
+│   ├── Details.js
+│   ├── EnrolledCourses.js
 │   ├── Home.js
 │   ├── MentorDashboard.js
-│   ├── StudentDashboard.js
-│   ├── EnrolledCourses.js
-│   └── Details.js
-│
-├── styles/
-│   └── style.css
-│
+│   └── StudentDashboard.js
+├── sql
+│   └── SQLQuery1.sql
+├── styles
+│   └── Home.css
+├── .gitignore
+├── README.md
 ├── db.json
-│
-└── README.md
+├── index.html
+├── package-lock.json
+└── package.json
 ```
 
 ---
