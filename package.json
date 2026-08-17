@@ -1,7 +1,7 @@
 {
-  "name": "to-do-lister",
+  "name": "Course-Path",
   "version": "1.0.0",
-  "description": "Task management application using JavaScript and JSON Server",
+  "description": "Course Path lets Student enroll course which was created by Mentor or Admin",
   "scripts": {
     "start": "json-server db.json --host 0.0.0.0 --port $PORT",
     "dev": "json-server db.json --host localhost --port 3000"

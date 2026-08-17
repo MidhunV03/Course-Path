@@ -772,7 +772,7 @@ async function studentReport(id) {
 document.addEventListener('click',function(e){
     const button = e.target.closest(".UserDetailbtn");
     console.log(button);
-    // if(!button) return;
+    if(!button) return;
     UserDetailPage();
 })
 
