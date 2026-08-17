@@ -1,4 +1,4 @@
-export const API_BASE_URL = "http://localhost:3000"
+export const API_BASE_URL = "https://course-path.onrender.com"
 
 export const MentorAPI = `${API_BASE_URL}/Mentor`;
 export const StudentsAPI = `${API_BASE_URL}/Students`;
